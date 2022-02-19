@@ -38,7 +38,7 @@ aws s3 ls $(terraform output -raw lambda_bucket_name)
 
 ## Create Lambda resource
 
-```
+```hcl
 resource "aws_lambda_function" "hello_world" {
   function_name = "HelloWorld"
 
